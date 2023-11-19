@@ -1,12 +1,12 @@
 # Indoor Cellular Network (ICN) Mobile Service Demands
 
-This page contains the code and data for the work ***Characterizing Mobile Service Demands at Indoor Cellular Networks.
+This page contains the code and data for the work "Characterizing Mobile Service Demands at Indoor Cellular Networks"
 
 DOI link: https://doi.org/10.1145/3618257.3624807
 
 <img src="images/paper_front.png" width="50%" height="100%"/>
 
-For questions, please contact ssb45@cam.ac.uk.
+For questions, please contact ssb45@cam.ac.uk or andre.zanella@imdea.org
 
 In case you use the data/code/insights of our work in your study, please cite our paper using the following:
 ```bibtex
@@ -26,15 +26,11 @@ In case you use the data/code/insights of our work in your study, please cite ou
 
 ## Data
 
-The file "Antennas_RSCA.csv" includes the computed RSCA of the 73 (columns) mobile services under consideration for the 4762 (rows) indoor cellular network antennas included in our data set
-The file "RSCA_Outdoor_Antennas.csv" includes the computed RSCA of the 73 (columns) mobile services under consideration for the neighboring outdoor antennas found within a 1km radius from the ICN antennas
-Access to raw traffic data can be provided upon agreement with the operator
+The file "Antennas_RSCA.csv" includes the computed RSCA of the 73 (columns) mobile services under consideration for the 4762 (rows) indoor cellular network antennas included in our data set. The last column of the file designates the type of indoor environment in which the antenna is installed. The file "RSCA_Outdoor_Antennas.csv" includes the computed RSCA of the 73 (columns) mobile services under consideration for the neighboring outdoor antennas found within a 1km radius of the ICN antennas Access to raw traffic data can be provided upon agreement with the operator.
 
 ### Methodology:
 
-A hierarchical clustering algorithm is employed to identify the clusters of ICN antennas based on similarities and differences in the RSCA values that denote under- or over-utilization of the 73 mobile services at each antenna with respect to typical usages.
-
-The clustering results are interpreted via SHAP and the clusters are juxtaposed with the type of indoor environment at which the antennas are installed.
+A hierarchical clustering algorithm is employed to identify the clusters of ICN antennas based on similarities and differences in the RSCA values that denote under- or over-utilization of the 73 mobile services at each antenna with respect to typical usages. The clustering results are interpreted via SHAP and the clusters are juxtaposed with the type of indoor environment in which the antennas are installed.
 
 
 ## Acknowledgements
